@@ -21,7 +21,7 @@
 
 .btn:hover {
   background-color: var(--cor-hover);
-  color: var(--cor-preto);
+  color: var(--cor-branco);
 }
 
 /* Nav-marca */
@@ -43,14 +43,14 @@
 }
 
 .titles h1 {
-  font-family: "Anton", sans-serif;
-  font-size: 6rem;
+  font-family: "Anton", serif;
+  font-size: 5rem;
   transition: font-size 0.3s;
 }
 
 .titles h2 {
   font-family: "Big Shoulders", sans-serif;
-  font-size: 4rem;
+  font-size: 3.4rem;
   transition: font-size 0.3s;
 }
 
@@ -64,8 +64,8 @@
 /* Portfólio */
 .portfolio h2 {
   text-align: center;
-  font-family: "Anton", sans-serif;
-  font-size: 3rem;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
   color: var(--cor-principal);
   padding-top: 3.75rem; /* 60px */
   margin-bottom: 1.875rem; /* 30px */
@@ -107,20 +107,23 @@
 
 .slide.active p {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   transition: font-size 0.3s;
+  margin-bottom: 40px;
 }
 
 .slide.active a {
   padding: 1.125rem 2.25rem; /* 18px 36px */
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 1.6rem;
   text-decoration: underline;
+  color: var(--cor-principal);
   transition: color 0.3s;
 }
 
 .slide.active a:hover {
-  color: var(--cor-principal);
+  color: var(--cor-branco);
 }
 
 /* Carousel */
@@ -156,7 +159,8 @@
 }
 
 .arrow:hover {
-  background-color: var(--cor-coral);
+  background-color: var(--cor-hover);
+  color: var(--cor-branco);
 }
 
 .arrow.left {
@@ -198,8 +202,8 @@
 }
 
 .container-all h2 {
-  font-family: "Anton", sans-serif;
-  font-size: 3rem;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
   color: var(--cor-branco);
   text-align: center;
   margin-bottom: 2.5rem; /* 40px */
@@ -245,7 +249,7 @@
 
 .card-purple p {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .card img {
@@ -278,8 +282,8 @@
 }
 
 .container-sale h2 {
-  font-family: "Anton", sans-serif !important;
-  font-size: 3rem;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
@@ -309,12 +313,14 @@
 }
 
 .sale-buy p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   color: #dddddd;
 }
 
 .price-box {
-  background-color: var(--cor-apoio);
+  background-color: var(--cor-secundaria);
   color: var(--cor-principal);
   font-weight: bold;
   font-size: 2rem;
@@ -330,12 +336,12 @@
 }
 
 .price {
-  font-family: "Anton", sans-serif !important;
+  font-family: "Big Shoulders", sans-serif !important;
   font-size: 3rem;
 }
 
 .offer-details {
-  background-color: var(--cor-branco);
+  background-color: var(--cor-secundaria);
   padding: 1rem; /* 16px */
 }
 
@@ -372,13 +378,13 @@
   padding: 1.125rem 2.25rem; /* 18px 36px */
   border: none;
   background-color: #d3d3d3;
-  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2rem;
   transition: background-color 0.3s;
 }
 
 .form-lead button {
-  background-color: var(--cor-coral);
-  color: var(--cor-branco);
+  background-color: var(--cor-botao);
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2rem;
   padding: 1.125rem 2.25rem; /* 18px 36px */
@@ -388,7 +394,8 @@
 }
 
 .form-lead button:hover {
-  background-color: var(--cor-apoio);
+  background-color: var(--cor-hover);
+  color: var(-cor--branco);
 }
 
 /* FAQ */
@@ -398,9 +405,9 @@
 }
 
 .container-faq h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
   color: var(--cor-branco);
-  font-size: 3rem;
   text-align: center;
   margin-bottom: 30px;
   padding-top: 60px;
@@ -411,12 +418,12 @@
   padding: 5vh 20vh;
 }
 
-.faq-items div p {
+.faq-item1 p,
+.faq-item2 p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 30px;
-  background-color: var(--cor-principal);
   color: var(--cor-branco);
   display: none;
   transition: background-color 0.3s, color 0.3s;
@@ -424,8 +431,8 @@
 
 .faq-item1 h3,
 .faq-item2 h3 {
-  font-family: "Big Shoulders", sans-serif;
-  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
   padding: 30px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -436,12 +443,12 @@
 }
 
 .faq-item2 h3 {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-branco);
 }
 
 .faq-item1 h3:hover,
 .faq-item2 h3:hover {
-  background-color: var(--cor-coral);
+  background-color: var(--cor-roxo);
   color: var(--cor-branco);
 }
 
@@ -459,13 +466,13 @@
 }
 
 .p-who h2 {
-  font-family: "Anton", sans-serif;
-  font-size: 3rem;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 4rem;
 }
 
 .p-who p {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .img-who {
@@ -490,7 +497,7 @@
 }
 
 .p-message h2 {
-  font-family: "Big Shoulders", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 2rem;
 }
 
@@ -501,15 +508,41 @@
 
 .list-message {
   display: flex;
-  justify-content: space-between;
   gap: 0.5rem; /* 8px */
   margin: 1rem auto;
 }
 
 .list-message li {
+  position: relative; /* permite posicionar o overlay */
   cursor: pointer;
-  transition: color 0.3s;
 }
+
+.list-message li::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #097975;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* deixa o clique passar para o link */
+  z-index: 1;
+}
+
+.list-message li:hover::after {
+  opacity: 0.6; /* ou outro valor que você queira */
+}
+
+/* Garantir que a imagem fique abaixo do overlay */
+.list-message li img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
 
 /* Footer */
 .footer {
