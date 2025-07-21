@@ -158,7 +158,7 @@ body {
   align-items: flex-start;
   max-width: 556px;
   width: 100%;
-  background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
+  background-color: rgba(207, 194, 224, 0.575);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
@@ -208,7 +208,7 @@ body {
 .container-all {
   padding: 5vh 0;
   margin-bottom: 3.75rem; /*60px*/
-  background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
+  background-color: rgba(207, 194, 224, 0.575);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
@@ -222,20 +222,18 @@ body {
 }
 
 .grid-cards {
-  display: grid; /* Padrão para desktop */
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas com tamanho igual */
-  gap: 0; /* Gap zero por padrão */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
   justify-content: center;
-  max-width: 1200px; /* Limitar largura para não esticar demais */
-  margin: 0 auto; /* Centralizar o grid */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Removidos width e height fixos daqui. Serão definidos no card-purple ou na imagem. */
-  /* Removidos margin e padding fixos daqui. Usar gap no grid/flex. */
 }
 
 .card-purple {
@@ -268,10 +266,10 @@ body {
 
 .card img {
   display: block;
-  width: 100%; /* Ocupa 100% da sua grid-cell */
-  height: auto; /* Mantém a proporção */
-  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
-  min-height: 18.1875rem; /* Altura mínima para desktop, para alinhar com card-purple */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-height: 18.1875rem;
 }
 
 /* Regras para alinhamento no grid (mantidas como estão) */
@@ -600,7 +598,6 @@ body {
 
 /*Pop-up*/
 
-/* Estilos para o Pop-up de Mensagem do Formulário */
 .form-message-popup {
   position: absolute;
   background-color: var(--cor-principal);
@@ -792,25 +789,23 @@ body {
 }
 
 .grid-cards {
-  display: grid; /* Padrão para desktop */
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas com tamanho igual */
-  gap: 0; /* Gap zero por padrão */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
   justify-content: center;
-  max-width: 1200px; /* Limitar largura para não esticar demais */
-  margin: 0 auto; /* Centralizar o grid */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Removidos width e height fixos daqui. Serão definidos no card-purple ou na imagem. */
-  /* Removidos margin e padding fixos aqui. Usar gap no grid/flex. */
 }
 
 .card-purple {
   background-color: var(--cor-apoio);
-  width: 100%; /* Ocupa 100% da sua grid-cell */
+  width: 100%;
   min-height: 18.1875rem; /* 291px - Altura mínima para desktop */
   flex-direction: column;
   text-align: center;
@@ -836,13 +831,12 @@ body {
   font-size: 1.6rem;
 }
 
-/* IMPORTANTE: Aqui garantimos que APENAS as imagens DENTRO dos cards de imagem tenham essas dimensões no desktop */
 .card:not(.card-purple) img { /* APENAS imagens dentro de cards que NÃO são roxos */
   display: block;
-  width: 100%; /* Ocupa 100% da sua grid-cell */
-  height: auto; /* Mantém a proporção */
-  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
-  min-height: 18.1875rem; /* Altura mínima para desktop, para alinhar com card-purple */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-height: 18.1875rem;
 }
 
 /* Regras para alinhamento no grid (mantidas como estão) */
@@ -959,7 +953,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
   max-width: 25rem; /* 400px */
 }
 
@@ -991,7 +984,7 @@ body {
 .container-faq {
   padding: 60px 0;
   margin-bottom: 3.75rem; /*60px*/
-  background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
+  background-color: rgba(207, 194, 224, 0.575);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
@@ -1110,12 +1103,12 @@ body {
   background-color: #097975;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* deixa o clique passar para o link */
+  pointer-events: none; 
   z-index: 1;
 }
 
 .list-message li:hover::after {
-  opacity: 0.6; /* ou outro valor que você queira */
+  opacity: 0.6; 
 }
 
 /* Garantir que a imagem fique abaixo do overlay */
@@ -1139,8 +1132,6 @@ body {
 }
 
 /*Responsivo*/
-
-/* ========== RESPONSIVO GERAL ========== */
 
 /* TABLETS e notebooks pequenos (até 1087px) */
 @media (max-width: 1087px) {
@@ -1193,35 +1184,24 @@ body {
   }
 
   .grid-cards {
-    display: flex; /* Agora é flex no mobile */
+    display: flex; 
     flex-direction: column;
     align-items: center;
-    gap: 16px; /* ESPAÇAMENTO FIXO ENTRE OS CARDS VISÍVEIS */
+    gap: 16px; 
   }
 
-  /* ********** NOVA CORREÇÃO PRINCIPAL AQUI ********** */
   .card-purple {
     width: 100%;
-    max-width: 500px; /* Limita a largura dos cards roxos */
-    min-height: auto; /* Remove a altura mínima do desktop */
-    height: auto; /* Permite que a altura seja determinada pelo conteúdo */
-    padding: 1.5rem; /* Manter o padding para o conteúdo */
-    display: flex; /* Garante que os cards roxos sejam flex containers e visíveis */
+    max-width: 500px; 
+    min-height: auto;
+    height: auto; 
+    padding: 1.5rem;
+    display: flex; 
   }
 
-  /* Faz com que os cards que NÃO são roxos (ou seja, os cards de imagem) sumam COMPLETAMENTE */
-  .grid-cards .card:not(.card-purple) {
-    display: none !important; /* Faz o card inteiro sumir do fluxo */
-    width: 0 !important; /* Apenas para garantir */
-    height: 0 !important; /* Apenas para garantir */
-    min-width: 0 !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    border: none !important;
-    overflow: hidden !important;
+  .card img {
+    display: none;
   }
-  /* ********************************************************* */
 
   .card-purple h3 {
     font-size: 1.5rem;
@@ -1275,7 +1255,7 @@ body {
   }
 }
 
-/* CELULARES (até 907px) - Reforce as regras para garantir */
+/* CELULARES (até 907px) */
 @media (max-width: 907px) {
   .container-header img {
     width: 100%;
@@ -1283,7 +1263,7 @@ body {
   }
 
   .titles h1 {
-    font-size: 2.8rem; /* AUMENTADO para hierarquia clara */
+    font-size: 2.8rem;
   }
 
   .titles h2 {
@@ -1309,22 +1289,12 @@ body {
 
   .grid-cards {
     flex-direction: column;
-    gap: 16px; /* ESPAÇAMENTO FIXO ENTRE OS CARDS */
+    gap: 16px;
   }
 
-  /* ********** REFORÇO DA CORREÇÃO ********** */
-  .grid-cards .card:not(.card-purple) {
-    display: none !important; /* Reforça para celulares menores */
-    width: 0 !important;
-    height: 0 !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    border: none !important;
-    overflow: hidden !important;
+  .card img {
+    display: none;
   }
-  /* ****************************************** */
 
   .card-purple h3 {
     font-size: 1.4rem;
