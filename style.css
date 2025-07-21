@@ -130,8 +130,7 @@ body {
 
 /* Portfólio */
 .container-portfolio {
-  margin-bottom: 7.5rem;
-  margin-top: 12rem;
+  margin-bottom: 3.75rem; /*60px*/
   padding: 0 1rem;
 }
 
@@ -208,7 +207,7 @@ body {
 /* Cards processo */
 .container-all {
   padding: 5vh 0;
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
@@ -296,7 +295,7 @@ body {
 .container-sale {
   font-family: "Roboto Condensed", sans-serif;
   padding: 4rem 2rem;
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
 }
 
 .container-sale h2 {
@@ -420,7 +419,7 @@ body {
 /* FAQ */
 .container-faq {
   padding: 60px 0;
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
@@ -700,7 +699,7 @@ body {
 
 /* Portfólio */
 .container-portfolio {
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
   margin-top: 12rem;
   padding: 0 1rem;
 }
@@ -778,7 +777,7 @@ body {
 /* Cards processo */
 .container-all {
   padding: 5vh 0;
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
@@ -867,7 +866,7 @@ body {
 .container-sale {
   font-family: "Roboto Condensed", sans-serif;
   padding: 4rem 2rem;
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
 }
 
 .container-sale h2 {
@@ -991,7 +990,7 @@ body {
 /* FAQ */
 .container-faq {
   padding: 60px 0;
-  margin-bottom: 7.5rem;
+  margin-bottom: 3.75rem; /*60px*/
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
