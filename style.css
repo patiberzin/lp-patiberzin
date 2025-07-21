@@ -130,7 +130,7 @@ body {
 
 /* Portfólio */
 .container-portfolio {
-  margin-bottom: 10rem;
+  margin-bottom: 7.5rem;
   margin-top: 12rem;
   padding: 0 1rem;
 }
@@ -208,7 +208,7 @@ body {
 /* Cards processo */
 .container-all {
   padding: 5vh 0;
-  margin-bottom: 10rem; /*160px*/
+  margin-bottom: 7.5rem;
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
@@ -296,7 +296,7 @@ body {
 .container-sale {
   font-family: "Roboto Condensed", sans-serif;
   padding: 4rem 2rem;
-  margin-bottom: 10rem; /*160px*/
+  margin-bottom: 7.5rem;
 }
 
 .container-sale h2 {
@@ -420,7 +420,7 @@ body {
 /* FAQ */
 .container-faq {
   padding: 60px 0;
-  margin-bottom: 10rem; /*160px*/
+  margin-bottom: 7.5rem;
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
@@ -700,7 +700,7 @@ body {
 
 /* Portfólio */
 .container-portfolio {
-  margin-bottom: 10rem;
+  margin-bottom: 7.5rem;
   margin-top: 12rem;
   padding: 0 1rem;
 }
@@ -778,7 +778,7 @@ body {
 /* Cards processo */
 .container-all {
   padding: 5vh 0;
-  margin-bottom: 10rem; /*160px*/
+  margin-bottom: 7.5rem;
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
@@ -867,7 +867,7 @@ body {
 .container-sale {
   font-family: "Roboto Condensed", sans-serif;
   padding: 4rem 2rem;
-  margin-bottom: 10rem; /*160px*/
+  margin-bottom: 7.5rem;
 }
 
 .container-sale h2 {
@@ -991,7 +991,7 @@ body {
 /* FAQ */
 .container-faq {
   padding: 60px 0;
-  margin-bottom: 10rem; /*160px*/
+  margin-bottom: 7.5rem;
   background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
