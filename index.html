@@ -6,21 +6,31 @@
     <title>Pati Berzin Landing Pages</title>
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <nav class="container-nav">
-      <img src="marca.png" alt="pati-berzin" width="205" height="122" />
+      <img src="marca-escura.png" alt="pati-berzin" width="205" height="122" />
     </nav>
 
+    <!-- Zigue-zagues decorativos -->
+<div class="zigzag-wrapper">
+  <!-- Primeiro zigue-zague branco -->
+  <svg class="zigzag white" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <polyline points="0,10 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10" />
+  </svg>
+
+  <!-- Segundo zigue-zague roxo -->
+  <svg class="zigzag purple" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <polyline points="0,10 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10" />
+  </svg>
+</div>
+
     <header class="container-header">
-      <img src="img-lps.png" alt="landing-pages" width="570" height="479" />
+      <img src="you-win.png" alt="you-win" width="525" height="297" />
       <div class="titles">
         <h1>Landing Pages</h1>
         <h2>Design + Copy + Código</h2>
@@ -29,42 +39,36 @@
       </div>
     </header>
 
-    <section class="portfolio">
-      <h2>Veja mais</h2>
-      <div class="container-portfolio">
-        <div class="card-portfolio">
+    <section class="container-portfolio">
+      <h2>Portfólio</h2>
+    
+      <div class="card-portfolio">
+        <!-- Bloco 1: lp-colinha -->
+        <div class="card-item">
+          <img src="lp-colinha.png" alt="lp-colinha" width="556" height="360">
           <div class="slide active">
             <h3>Página de Venda de Cursos</h3>
-            <p>
-              Esta página utiliza a mesma linguagem das redes sociais para gerar
+            <p>Esta página utiliza a mesma linguagem das redes sociais para gerar
               proximidade com o público-alvo (estudantes de programação). As cores,
-              imagens, elementos gráficos são todos pensados para vender mais,
-              inclusive, nela você tem elementos feitos à mão no Figma.
-            </p>
-            <a href="https://lp-colinha-academy.vercel.app/" target="_blank">Quero ver online</a>
-          </div>
-
-          <div class="slide">
-            <h3>Projeto Beta</h3>
-            <p>Descrição do projeto Beta, você pode mudar fonte, cor, etc.</p>
-          </div>
-
-          <div class="slide">
-            <h3>Projeto Gama</h3>
-            <p>Descrição do projeto Gama, tudo no HTML, fácil de editar.</p>
+              imagens, elementos gráficos são todos pensados para atração e venda.</p>
+            <a href="https://lp-colinha-academy.vercel.app/" target="_blank">Veja mais</a>
           </div>
         </div>
-
-        <div class="carousel">
-          <div class="image-wrapper">
-            <a href="#" id="prev-link" class="arrow left" aria-label="Slide anterior">&#10094;</a>
-            <img id="portfolio-image" src="lp-colinha.png" alt="Projeto Alpha" width="570" height="660" />
-            <a href="#" id="next-link" class="arrow right" aria-label="Próximo slide">&#10095;</a>
+    
+        <!-- Bloco 2: lp-box -->
+        <div class="card-item">
+          <img src="lp-box.png" alt="lp-box" width="556" height="360">
+          <div class="slide active">
+            <h3>Página de Venda de Livros</h3>
+            <p>Esta página fictícia foi feita como um exercício de expansão, para a venda de livros da série "Os Bridgertons". Nela você tem um design leve, clássico, e a copy pensada em conversão.</p>
+            <a href="https://www.behance.net/gallery/221911407/Landing-Page-Box-de-Livros" target="_blank">Veja mais</a>
           </div>
-          <div id="breadcrumbs" class="breadcrumbs" aria-label="Navegação do carrossel"></div>
         </div>
       </div>
+  
+      </div>
     </section>
+    
 
     <section class="container-all">
       <h2>Meu processo valoriza seu tempo</h2>
@@ -159,6 +163,7 @@
       </div>
     </section>
 
+
     <section class="container-faq">
       <h2>FAQ Perguntas frequentes</h2>
       <div class="faq-items">
@@ -200,23 +205,23 @@
         <p>Eu sou a Patrícia Berzin, Dev Frontend, <br />UX/UI Designer e pós-graduanda em Copywriting.</p>
         <p>Uno habilidades para você dar um UP no digital!</p>
 
-        <div class="p-message">
+        <div class="container-message">
           <h2>Meus contatos e redes</h2>
           <p>patiberzin@gmail.com</p>
           <ul class="list-message">
             <li>
               <a href="https://www.linkedin.com/in/patriciaberzin/" target="_blank">
-                <img src="icone-in.png" alt="icone-in" width="124" height="124" />
+                <img src="icone-in.png" alt="icone-in" width="80" height="80" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/patiberzin/" target="_blank">
-                <img src="icone-ig.png" alt="icone-ig" width="124" height="124" />
+                <img src="icone-ig.png" alt="icone-ig" width="80" height="80" />
               </a>
             </li>
             <li>
               <a href="https://github.com/patiberzin" target="_blank">
-                <img src="icone-code.png" alt="icone-code" width="124" height="124" />
+                <img src="icone-code.png" alt="icone-code" width="80" height="80" />
               </a>
             </li>
           </ul>

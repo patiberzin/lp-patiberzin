@@ -9,6 +9,11 @@
   text-decoration: none;
 }
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgb(204, 183, 237), rgb(255, 255, 255));
+}
+
 .btn {
   background-color: var(--cor-botao);
   padding: 1.125rem 2.25rem; /* 18px 36px */
@@ -26,185 +31,155 @@
 
 /* Nav-marca */
 .container-nav {
-  background-color: var(--cor-principal);
   padding: 1.875rem; /* 30px */
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s;
 }
+
+/* Zig-Zag */
+
+.zigzag-wrapper {
+
+  line-height: 0; /* remove espaço entre SVGs */
+}
+
+.zigzag {
+  width: 100%;
+  height: 20px;
+  display: block;
+}
+
+.zigzag.white polyline {
+  fill: none;
+  stroke: var(--cor-branco);
+  stroke-width: 2;
+}
+
+.zigzag.purple polyline {
+  fill: none;
+  stroke: var(--cor-principal);
+  stroke-width: 2;
+}
+
 
 /* Dobra 1 - Header */
 .container-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10vh 5vh;
+  max-width: 1200px;
+  margin: 120px auto;
 }
 
 .titles h1 {
-  font-family: "Anton", serif;
-  font-size: 5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 6rem;
   transition: font-size 0.3s;
+  color: var(--cor-principal);
 }
 
 .titles h2 {
   font-family: "Big Shoulders", sans-serif;
-  font-size: 3.4rem;
-  transition: font-size 0.3s;
+  font-size: 3.3rem;
 }
 
 .titles h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
   margin-bottom: 2.5rem; /* 40px */
-  transition: font-size 0.3s, margin-bottom 0.3s;
 }
 
 /* Portfólio */
-.portfolio h2 {
-  text-align: center;
+.container-portfolio {
+  margin-bottom: 10rem;
+  margin-top: 12rem;
+  padding: 0 1rem;
+}
+
+.container-portfolio h2 {
   font-family: "Big Shoulders", sans-serif;
   font-size: 4rem;
   color: var(--cor-principal);
-  padding-top: 3.75rem; /* 60px */
-  margin-bottom: 1.875rem; /* 30px */
-  transition: color 0.3s;
-}
-
-.container-portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.75rem; /* 60px */
-  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .card-portfolio {
-  background-color: var(--cor-apoio);
-  padding: 1.875rem; /* 30px */
-  max-width: 31.25rem; /* 500px */
-  text-align: center;
-  box-sizing: border-box;
-  transition: background-color 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
 }
 
-.card-portfolio .slide {
-  display: none;
+/* Container de cada item (imagem + texto) */
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 556px;
+  width: 100%;
+  background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
 
-.card-portfolio .slide.active {
+/* Imagem com largura 100% do container */
+.card-item img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-.slide.active h3 {
-  font-family: "Big Shoulders", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem; /* 8px */
-  transition: font-size 0.3s, margin-bottom 0.3s;
+/* Área de texto */
+.slide {
+  background-color: transparent;
+  padding: 1rem;
 }
 
-.slide.active p {
+.slide h3 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.6rem;
-  transition: font-size 0.3s;
-  margin-bottom: 40px;
-}
-
-.slide.active a {
-  padding: 1.125rem 2.25rem; /* 18px 36px */
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-  font-size: 1.6rem;
-  text-decoration: underline;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--cor-principal);
-  transition: color 0.3s;
 }
 
-.slide.active a:hover {
-  color: var(--cor-branco);
+.slide p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.slide a {
+  color: var(--cor-principal);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.slide a:hover {
+  color: #000;
 }
 
 /* Carousel */
-.carousel {
-  position: relative;
-  text-align: center;
-}
-
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: var(--cor-branco);
-  background-color: var(--cor-principal);
-  text-decoration: none;
-  padding: 0.75rem; /* 12px */
-  border-radius: 50%;
-  width: 2.5rem; /* 40px */
-  height: 2.5rem; /* 40px */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  transition: background-color 0.3s;
-  user-select: none;
-  cursor: pointer;
-}
-
-.arrow:hover {
-  background-color: var(--cor-hover);
-  color: var(--cor-branco);
-}
-
-.arrow.left {
-  left: -3.125rem; /* -50px */
-}
-
-.arrow.right {
-  right: -3.125rem; /* -50px */
-}
-
-.breadcrumbs {
-  margin-top: 1.25rem; /* 20px */
-  margin-bottom: 3.75rem; /* 60px */
-  display: flex;
-  justify-content: center;
-  gap: 0.625rem; /* 10px */
-}
-
-.breadcrumbs a {
-  display: inline-block;
-  width: 0.75rem; /* 12px */
-  height: 0.75rem; /* 12px */
-  background-color: #ccc;
-  border-radius: 50%;
-  text-indent: -9999px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.breadcrumbs a.active {
-  background-color: var(--cor-principal);
-}
 
 /* Cards processo */
 .container-all {
-  background-color: var(--cor-principal);
   padding: 5vh 0;
+  margin-bottom: 10rem; /*160px*/
+  background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
 
 .container-all h2 {
   font-family: "Big Shoulders", sans-serif;
   font-size: 4rem;
-  color: var(--cor-branco);
+  color: var(--cor-principal);
   text-align: center;
   margin-bottom: 2.5rem; /* 40px */
 }
@@ -278,15 +253,16 @@
 .container-sale {
   font-family: "Roboto Condensed", sans-serif;
   padding: 4rem 2rem;
-  color: var(--cor-branco);
+  margin-bottom: 10rem; /*160px*/
 }
 
 .container-sale h2 {
   font-family: "Big Shoulders", sans-serif;
   font-size: 4rem;
+  color: var(--cor-principal);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: var(--cor-principal) !important;
 }
 
@@ -298,7 +274,7 @@
 }
 
 .sale-buy {
-  background-color: var(--cor-principal);
+  background-color: var(--cor-apoio);
   padding: 2rem;
   max-width: 31.25rem; /* 500px */
   flex: 1;
@@ -308,7 +284,6 @@
 .sale-buy h3 {
   font-family: "Big Shoulders", sans-serif !important;
   font-size: 2rem;
-  color: var(--cor-branco);
   margin-bottom: 1rem;
 }
 
@@ -316,7 +291,6 @@
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
-  color: #dddddd;
 }
 
 .price-box {
@@ -365,12 +339,14 @@
   font-weight: bold;
 }
 
+/*Formulário*/
+
 .form-lead {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-width: 18.75rem; /* 300px */
+
   max-width: 25rem; /* 400px */
 }
 
@@ -400,16 +376,19 @@
 
 /* FAQ */
 .container-faq {
-  background-color: var(--cor-principal);
   padding: 60px 0;
+  margin-bottom: 10rem; /*160px*/
+  background-color: rgba(207, 194, 224, 0.575); /* thistle com transparência */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
 
 .container-faq h2 {
   font-family: "Big Shoulders", sans-serif;
   font-size: 4rem;
-  color: var(--cor-branco);
+  color: var(--cor-principal);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
   padding-top: 60px;
   transition: color 0.3s;
 }
@@ -455,9 +434,9 @@
 /* Quem faz */
 .container-who {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin: 0 auto;
 }
 
 .p-who {
@@ -468,6 +447,7 @@
 .p-who h2 {
   font-family: "Big Shoulders", sans-serif;
   font-size: 4rem;
+  color: var(--cor-principal);
 }
 
 .p-who p {
@@ -477,31 +457,21 @@
 
 .img-who {
   margin: 60px auto;
-  align-self: center;
 }
 
 /* Fale comigo */
 .container-message {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 7.5rem 3.75rem 3.75rem 3.75rem; /* 120px 60px 60px 60px */
-}
-
-.logo-black {
-  align-items: baseline;
-}
-
-.p-message {
   margin: 1.25rem;
 }
 
-.p-message h2 {
+.container-message h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2rem;
 }
 
-.p-message p {
+.container-message p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
 }
@@ -553,4 +523,248 @@
   color: var(--cor-branco);
   padding: 1.875rem; /* 30px */
   transition: background-color 0.3s, color 0.3s;
+}
+
+/*Responsivo*/
+
+/* ========== RESPONSIVO GERAL ========== */
+
+/* TABLETS e notebooks pequenos (até 1087px) */
+@media (max-width: 1087px) {
+  .container-header {
+    flex-direction: column;
+    text-align: center;
+    max-width: 90%;
+    margin: 4rem auto;
+  }
+
+  .container-header img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .titles h1 {
+    font-size: 3.8rem;
+  }
+
+  .titles h2 {
+    font-size: 2.2rem;
+  }
+
+  .titles h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .card-portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-item {
+    max-width: 90%;
+  }
+
+  .container-portfolio h2,
+  .container-all h2,
+  .container-sale h2,
+  .container-faq h2,
+  .p-who h2 {
+    font-size: 2.5rem;
+  }
+
+  .grid-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* ESPAÇAMENTO FIXO ENTRE OS CARDS */
+  }
+
+  .card-purple {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .card-purple h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-purple p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .container-buy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-lead img {
+    display: none;
+  }
+
+  .faq-items {
+    padding: 2rem;
+  }
+
+  .container-who {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .img-who {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .container-message {
+    padding: 2rem 1rem;
+  }
+
+  .list-message {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* CELULARES (até 820px) */
+@media (max-width: 907px) {
+  .container-header img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .titles h1 {
+    font-size: 2.8rem; /* AUMENTADO para hierarquia clara */
+  }
+
+  .titles h2 {
+    font-size: 1.6rem;
+  }
+
+  .titles h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .card-portfolio {
+    padding: 0 1rem;
+  }
+
+  .card-item {
+    max-width: 100%;
+  }
+
+  .grid-cards {
+    flex-direction: column;
+    gap: 16px; /* ESPAÇAMENTO FIXO ENTRE OS CARDS */
+  }
+
+  .card-purple {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .card-purple h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-purple p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .container-sale {
+    padding: 2rem 1rem;
+  }
+
+  .sale-buy,
+  .form-lead {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-lead input,
+  .form-lead button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .form-lead img {
+    display: none;
+  }
+
+  .faq-items {
+    padding: 1rem;
+  }
+
+  .faq-item1 p,
+  .faq-item2 p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .faq-item1 h3,
+  .faq-item2 h3 {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .img-who {
+    width: 90%;
+  }
+
+  .container-message h2 {
+    font-size: 1.5rem;
+  }
+
+  .container-message p,
+  .p-who p {
+    font-size: 1.2rem;
+  }
+
+  .list-message li img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 1.25rem;
+  }
+}
+
+/* REFORÇOS GERAIS */
+img {
+  max-width: 100%;
+  height: auto;
 }
