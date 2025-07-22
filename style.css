@@ -570,21 +570,19 @@ body {
   }
 
   .container-header img {
-    width: 60%;
-    height: auto;
-    margin-bottom: 1rem;
+    display: none;
   }
 
   .titles h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
 
   .titles h2 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .titles h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -693,20 +691,19 @@ body {
 /* CELULARES (até 907px) - Reforce as regras para garantir */
 @media (max-width: 907px) {
   .container-header img {
-    width: 100%;
-    max-width: 320px;
+    display: none;
   }
 
   .titles h1 {
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
 
   .titles h2 {
-    font-size: 1.6rem;
+    font-size: 2.1rem;
   }
 
   .titles h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .btn {
@@ -759,6 +756,14 @@ body {
     max-width: 100%;
   }
 
+  .sale-buy h3 {
+    font-size: 2rem;
+  }
+
+  .sale-buy p {
+    font-size: 1rem;
+  }
+
   .form-lead input,
   .form-lead button {
     font-size: 1rem;
@@ -795,7 +800,7 @@ body {
 
   .container-message p,
   .p-who p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .list-message li img {
