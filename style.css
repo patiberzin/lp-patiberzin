@@ -433,7 +433,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 30px;
-  color: var(--cor-branco);
+  color: var(--cor-preto);
   display: none;
   transition: background-color 0.3s, color 0.3s;
 }
