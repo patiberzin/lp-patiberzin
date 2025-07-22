@@ -17,11 +17,10 @@ body {
 .btn {
   background-color: var(--cor-botao);
   padding: 1.125rem 2.25rem;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   color: var(--cor-preto);
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {
@@ -125,7 +124,7 @@ body {
 
 /* Portfólio */
 .container-portfolio {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   margin-top: 12rem;
   padding: 0 1rem;
 }
@@ -200,7 +199,7 @@ body {
 /* Cards processo */
 .container-all {
   padding: 5vh 0;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   background-color: rgba(207, 194, 224, 0.575);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -285,7 +284,7 @@ body {
 .container-sale {
   font-family: "Roboto Condensed", sans-serif;
   padding: 4rem 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .container-sale h2 {
@@ -393,12 +392,11 @@ body {
 
 .form-lead button {
   background-color: var(--cor-botao);
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   padding: 1.125rem 2.25rem;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .form-lead button:hover {
@@ -409,7 +407,7 @@ body {
 /* FAQ */
 .container-faq {
   padding: 60px 0;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   background-color: rgba(207, 194, 224, 0.575);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -442,7 +440,7 @@ body {
 
 .faq-item1 h3,
 .faq-item2 h3 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Big Shoulders", sans-serif;
   font-size: 1.6rem;
   padding: 30px;
   cursor: pointer;
@@ -498,7 +496,7 @@ body {
   margin: 1.25rem;
 }
 
-.container-message h2 {
+.container-message h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 2rem;
 }
@@ -539,8 +537,8 @@ body {
 
 .list-message li img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 80px;
+  height: 80px;
   position: relative;
   z-index: 0;
 }
@@ -562,6 +560,11 @@ body {
 
 /* TABLETS e notebooks pequenos (até 1087px) */
 @media (max-width: 1087px) {
+  .container-nav img {
+    width: 120px;
+    height: 71px;
+  }
+
   .container-header {
     flex-direction: column;
     text-align: center;
@@ -586,9 +589,10 @@ body {
     margin-bottom: 1rem;
   }
 
+  .form-lead button,
   .btn {
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+    padding: 0.75rem 1.25rem;
   }
 
   .card-portfolio {
@@ -600,12 +604,37 @@ body {
     max-width: 90%;
   }
 
-  .container-portfolio h2,
+  .container-all,
+  .container-portfolio,
+  .container-sale,
+  .container-faq,
+  .container-who {
+    margin-bottom: 4rem;
+  }
+
   .container-all h2,
+  .container-portfolio h2,
   .container-sale h2,
   .container-faq h2,
-  .p-who h2 {
-    font-size: 2.5rem;
+  .container-who h2 {
+    font-size: 2.1rem;
+  }
+
+  .container-message h3,
+  .slide.active h3,
+  .card-purple h3,
+  .card-purple h4,
+  .sale-buy h3,
+  .faq-item1 h3,
+  .faq-item2 h3 {
+    font-size: 1.5rem;
+  }
+
+  
+
+  .list-message li img {
+    width: 80px;
+    height: 80px;
   }
 
   .grid-cards {
@@ -637,11 +666,12 @@ body {
   }
 
   .card-purple h3 {
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
-  .card-purple p {
+  .card-purple p,
+  .faq-item1 p,
+  .faq-item2 p {
     font-size: 1.1rem;
     line-height: 1.5;
   }
@@ -686,10 +716,20 @@ body {
     text-align: center;
     gap: 1rem;
   }
+
+  .img-who {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 /* CELULARES (até 907px) - Reforce as regras para garantir */
 @media (max-width: 907px) {
+  .container-nav img {
+    width: 120px;
+    height: 71px;
+  }
+
   .container-header img {
     display: none;
   }
@@ -704,11 +744,7 @@ body {
 
   .titles h3 {
     font-size: 1rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.875rem;
   }
 
   .card-portfolio {
@@ -737,7 +773,7 @@ body {
   }
 
   .card-purple h3 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
 
@@ -757,16 +793,16 @@ body {
   }
 
   .sale-buy h3 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .sale-buy p {
     font-size: 1rem;
   }
 
-  .form-lead input,
-  .form-lead button {
-    font-size: 1rem;
+  .form-lead button,
+  .btn {
+    font-size: 1.6rem;
     padding: 0.75rem 1.25rem;
   }
 
@@ -787,14 +823,37 @@ body {
   .faq-item1 h3,
   .faq-item2 h3 {
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
   }
 
   .img-who {
     width: 90%;
   }
 
-  .container-message h2 {
+  .container-all,
+  .container-portfolio,
+  .container-sale,
+  .container-faq,
+  .container-who {
+    margin-bottom: 4rem;
+  }
+
+  .container-all h2,
+  .container-portfolio h2,
+  .container-sale h2,
+  .container-faq h2,
+  .container-who h2 {
+    font-size: 2.1rem;
+  }
+
+  .container-message h3,
+  .slide.active h3,
+  .card-purple h3,
+  .card-purple h4,
+  .sale-buy h3,
+  .faq-item1 h3,
+  .faq-item2 h3 {
     font-size: 1.5rem;
   }
 
@@ -806,6 +865,11 @@ body {
   .list-message li img {
     width: 60px;
     height: 60px;
+  }
+
+    .img-who {
+    width: 180px;
+    height: 240px;
   }
 
   .footer {
