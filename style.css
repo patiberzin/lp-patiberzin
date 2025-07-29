@@ -556,8 +556,6 @@ body {
 
 /*Responsivo*/
 
-/* ========== RESPONSIVO GERAL ========== */
-
 /* TABLETS e notebooks pequenos (até 1087px) */
 @media (max-width: 1087px) {
   .container-nav img {
@@ -723,7 +721,7 @@ body {
   }
 }
 
-/* CELULARES (até 907px) - Reforce as regras para garantir */
+/* CELULARES (até 907px) */
 @media (max-width: 907px) {
   .container-nav img {
     width: 120px;
